@@ -72,7 +72,9 @@
 
 ### Windows 客户端
 
-Windows 客户端源码目前在独立 Windows 主机上开发，后续会从 Windows 主机同步到本仓库。
+[`Windows/`](Windows/) 包含完整的 C# / .NET 8 托盘客户端源码、自动测试和 `v3.0.0` 成品包。它支持每秒系统遥测、DDC/KVM 切换、显示输出休眠/唤醒，以及天气和行情 dashboard；Windows 是 dashboard 主数据源，断线后由 macOS 备用数据接管。
+
+当前 Windows Release 已打包在 [`Windows/release/`](Windows/release/) 中，天气支持 Open-Meteo、和风天气和高德天气，API Key 使用 Windows Credential Manager 保存。
 
 ## 当前状态
 
@@ -80,6 +82,7 @@ Windows 客户端源码目前在独立 Windows 主机上开发，后续会从 Wi
 
 - ESP32-S3 固件已经完成 ESP-IDF 编译。
 - macOS 客户端代码已经同步当前 dashboard、KVM 和显示输出休眠/唤醒协议。
+- Windows `v3.0.0` 源码、自动测试和 win-x64 成品已经同步。
 - 当前仍需完成 ESP32、macOS、Windows 三端硬件联调。
 - 不同显示器、USB 共享器和局域网环境可能需要单独调整配置。
 
@@ -88,6 +91,7 @@ Windows 客户端源码目前在独立 Windows 主机上开发，后续会从 Wi
 ```text
 esp32/          ESP32-S3 固件、历史版本和验证工程
 StatsForKVM/    macOS 菜单栏客户端、KVM 功能和 protocol v1
+Windows/        Windows 托盘客户端、自动测试、文档和 win-x64 成品
 cad_enclosure/  3D 打印外壳、STL 和生成脚本
 m1ddc/          DDC 控制的第三方参考源码
 docs/images/    硬件装配图和成品照片
@@ -99,7 +103,8 @@ releases/       macOS 开发版应用压缩包
 1. 先阅读 [硬件装配与走线实拍](docs/hardware-assembly.md) 和 [项目需求](project_requirements.md)。
 2. 使用 `esp32/latest/` 中的固件源码和配置模板准备 ESP32-S3。
 3. 在 Mac 上打开 `StatsForKVM/Stats.xcodeproj`，或直接体验 `releases/macos/` 中的开发版 App。
-4. 按照 [通信协议](StatsForKVM/PROTOCOL.md) 配置客户端；Windows 客户端将在后续版本同步。
+4. Windows 可直接使用 [`Windows/release/`](Windows/release/) 中的成品，或按 [`Windows/README.md`](Windows/README.md) 从源码构建。
+5. 按照 [通信协议](StatsForKVM/PROTOCOL.md) 配置客户端和 ESP32 地址。
 
 ## Apple 商标声明
 

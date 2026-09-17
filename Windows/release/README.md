@@ -1,0 +1,9 @@
+# Windows Release
+
+- 文件：`KVMBridgeWindows-v3.0.0-win-x64.zip`
+- 平台：Windows x64
+- 形态：.NET 8 自包含单文件应用
+- ZIP SHA-256：`60B359C8766EA2ECB4DF3A8DF85E68E4341D315C923F47ED3462EAB27D0D8FC6`
+- ZIP 内 EXE SHA-256：`1F4E9379DC743EEAD753D4C7EA492D8BC66C9F9EA3AC1F14584E17954AAD1334`
+
+解压后运行 `KVMBridgeWindows.exe`。Windows SmartScreen 如提示未知发布者，请先核对上述 SHA-256；当前构建未进行代码签名。

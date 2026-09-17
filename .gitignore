@@ -28,6 +28,8 @@ __pycache__/
 **/*.ninja_deps
 **/*.ninja_log
 **/.objects/
+**/bin/
+**/obj/
 m1ddc/m1ddc
 
 # Nested upstream repositories are kept as source snapshots, not Git submodules
@@ -47,3 +49,4 @@ secrets.*
 !releases/
 !releases/macos/
 !releases/macos/*.zip
+!Windows/release/*.zip

@@ -74,7 +74,7 @@
 
 [`Windows/`](Windows/) 包含完整的 C# / .NET 8 托盘客户端源码、自动测试和 `v3.0.0` 成品包。它支持每秒系统遥测、DDC/KVM 切换、显示输出休眠/唤醒，以及天气和行情 dashboard；Windows 是 dashboard 主数据源，断线后由 macOS 备用数据接管。
 
-当前 Windows Release 已打包在 [`Windows/release/`](Windows/release/) 中，天气支持 Open-Meteo、和风天气和高德天气，API Key 使用 Windows Credential Manager 保存。
+当前 Windows Release 已打包在 [`Windows/release/`](Windows/release/) 中。
 
 ## 当前状态
 

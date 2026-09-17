@@ -2,6 +2,14 @@
 
 本目录按“当前输出”和“历史版本与生成代码”分开管理。
 
+## 实物效果
+
+当前原型的成品照片：
+
+![Apple Retro Hybrid KVM Desktop Controller](../docs/images/assembled-product.jpg)
+
+硬件控制板的固定方式和主板走线见[硬件装配与走线实拍](../docs/hardware-assembly.md)。
+
 ```text
 cad_enclosure/
 ├── latest_output/

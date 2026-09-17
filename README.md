@@ -72,7 +72,7 @@
 
 ### Windows 客户端
 
-Windows 客户端源码目前在独立 Windows 主机上开发。仓库中的 [`Windows/`](Windows/) 目录先提供通信协议、功能说明、配置示例和验收文档。
+Windows 客户端源码目前在独立 Windows 主机上开发，后续会从 Windows 主机同步到本仓库。
 
 ## 当前状态
 
@@ -88,7 +88,6 @@ Windows 客户端源码目前在独立 Windows 主机上开发。仓库中的 [`
 ```text
 esp32/          ESP32-S3 固件、历史版本和验证工程
 StatsForKVM/    macOS 菜单栏客户端、KVM 功能和 protocol v1
-Windows/        Windows 客户端协议、功能规范和测试文档
 cad_enclosure/  3D 打印外壳、STL 和生成脚本
 m1ddc/          DDC 控制的第三方参考源码
 docs/images/    硬件装配图和成品照片
@@ -100,7 +99,7 @@ releases/       macOS 开发版应用压缩包
 1. 先阅读 [硬件装配与走线实拍](docs/hardware-assembly.md) 和 [项目需求](project_requirements.md)。
 2. 使用 `esp32/latest/` 中的固件源码和配置模板准备 ESP32-S3。
 3. 在 Mac 上打开 `StatsForKVM/Stats.xcodeproj`，或直接体验 `releases/macos/` 中的开发版 App。
-4. 按照 [通信协议](StatsForKVM/PROTOCOL.md) 和 [Windows 功能说明](Windows/README.md) 配置客户端。
+4. 按照 [通信协议](StatsForKVM/PROTOCOL.md) 配置客户端；Windows 客户端将在后续版本同步。
 
 ## Apple 商标声明
 

@@ -26,4 +26,4 @@
 - `latest/docs/ui_spec.md`
 - `latest/docs/development_plan.md`
 
-当前协议权威定义在`../StatsForKVM/PROTOCOL.md`。历史目录中的文档仅用于解释对应历史版本；Windows 客户端实现合同位于`../Windows/`，其源码目前维护在独立 Windows 主机。
+当前协议权威定义在`../StatsForKVM/PROTOCOL.md`。历史目录中的文档仅用于解释对应历史版本；Windows 客户端源码目前维护在独立 Windows 主机，后续会同步到本仓库。

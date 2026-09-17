@@ -156,7 +156,7 @@ Mac与Windows每10秒发送一次天气和行情快照。它使用独立于telem
 }
 ```
 
-`daily`固定3项且不含今天；`hourly`固定5项；无效分区发送`null`，禁止发送假零值。两个分区同时为`null`时`error`必须为非空稳定错误码。完整字段范围、数据源、主备时序与Windows实现见`../Windows/DASHBOARD_PAGES_UPGRADE.md`。
+`daily`固定3项且不含今天；`hourly`固定5项；无效分区发送`null`，禁止发送假零值。两个分区同时为`null`时`error`必须为非空稳定错误码。完整字段范围、数据源和主备时序以本文协议为准；Windows 客户端实现将在后续版本同步。
 
 ## 6. command：ESP32 到客户端
 

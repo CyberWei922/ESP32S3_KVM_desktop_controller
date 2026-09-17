@@ -89,7 +89,7 @@ protocol v1通过Hello中的可选`capabilities`做兼容扩展，新增：
 - 超时；
 - 另一台主机未能停止输出，无法确认显示器待机。
 
-未声明能力的旧客户端仍可连接并使用既有遥测与KVM功能；ESP32不得向其发送休眠/唤醒命令。完整报文和结果字段以`../../../StatsForKVM/PROTOCOL.md`及`../../../Windows/WINDOWS_DISPLAY_POWER_UPGRADE.md`为准。
+未声明能力的旧客户端仍可连接并使用既有遥测与KVM功能；ESP32不得向其发送休眠/唤醒命令。完整报文和结果字段以`../../../StatsForKVM/PROTOCOL.md`为准；Windows 客户端实现将在后续版本同步。
 
 ## 7. 当前开发版验收
 

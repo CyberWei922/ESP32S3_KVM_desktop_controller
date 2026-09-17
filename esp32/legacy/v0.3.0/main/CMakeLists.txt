@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "app_state.c"
+        "lcd_driver.c"
+        "lcd_test_ui.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        esp_common
+        esp_system
+        heap
+        esp_driver_gpio
+        esp_driver_spi
+        spi_flash
+)

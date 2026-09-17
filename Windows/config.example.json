@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "connection": {
+    "enabled": true,
+    "host": "192.168.1.50",
+    "port": 81,
+    "path": "/statsforkvm",
+    "telemetry_interval_ms": 1000,
+    "keepalive_interval_ms": 15000
+  },
+  "telemetry": {
+    "enabled": true,
+    "cpu_temperature_source": "LibreHardwareMonitor CPU Package",
+    "memory_source": "GlobalMemoryStatusEx"
+  },
+  "kvm": {
+    "enabled": false,
+    "display_id": "",
+    "vcp_code": 96,
+    "mac_input": 6,
+    "windows_input": 7,
+    "verify_readback": false,
+    "ddc_backend": "native",
+    "control_my_monitor_path": null,
+    "control_my_monitor_monitor_id": null
+  },
+  "dashboard": {
+    "enabled": true,
+    "send_interval_seconds": 10,
+    "weather_refresh_minutes": 15,
+    "weather_provider": "open_meteo",
+    "city_code": "Shanghai",
+    "city_name": "",
+    "latitude": null,
+    "longitude": null,
+    "qweather_api_host": "",
+    "qweather_api_key_credential_name": "KVMBridgeWindows.QWeather",
+    "amap_api_key_credential_name": "KVMBridgeWindows.AMap"
+  },
+  "startup": {
+    "start_with_windows": false
+  },
+  "logging": {
+    "level": "info",
+    "retention_days": 7
+  }
+}

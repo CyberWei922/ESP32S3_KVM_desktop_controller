@@ -1,0 +1,6 @@
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+main/include/kvm_config.local.h
+.DS_Store

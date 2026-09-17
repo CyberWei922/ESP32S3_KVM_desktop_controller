@@ -1,0 +1,77 @@
+#pragma once
+
+#include "driver/gpio.h"
+#include "interaction_config.h"
+
+#define APP_VERSION "0.5.0-dev.22"
+
+#define APP_BOOT_BACKLIGHT_SETTLE_MS 700
+#define APP_BOOT_WIFI_SETTLE_MS 800
+
+#define APP_BUTTON_PIN_LEFT GPIO_NUM_4
+#define APP_BUTTON_PIN_MIDDLE GPIO_NUM_5
+#define APP_BUTTON_PIN_RIGHT GPIO_NUM_6
+#define APP_USB_RELAY_PIN GPIO_NUM_7
+#define APP_COOLER_RELAY_PIN GPIO_NUM_8
+#define APP_LCD_PIN_DC GPIO_NUM_9
+#define APP_LCD_PIN_CS GPIO_NUM_10
+#define APP_LCD_PIN_MOSI GPIO_NUM_11
+#define APP_LCD_PIN_SCLK GPIO_NUM_12
+#define APP_LCD_PIN_MISO GPIO_NUM_13
+#define APP_LCD_PIN_RST GPIO_NUM_14
+#define APP_LCD_PIN_BACKLIGHT GPIO_NUM_15
+
+#define APP_LCD_WIDTH 320
+#define APP_LCD_HEIGHT 240
+#define APP_LCD_SPI_CLOCK_HZ (4 * 1000 * 1000)
+#define APP_LCD_DRAW_BUFFER_LINES 24
+
+#define APP_HOST_STALE_TIMEOUT_MS 5000
+#define APP_DASHBOARD_STALE_TIMEOUT_MS 30000
+#define APP_DASHBOARD_WINDOWS_RECOVERY_MS 60000
+#define APP_COMMAND_TIMEOUT_MS 5000
+#define APP_USB_RELAY_PULSE_MS 250
+#define APP_KVM_COOLDOWN_MS 5000
+
+#define APP_COOLER_SINGLE_CLICK_MS 120
+#define APP_COOLER_DOUBLE_CLICK_MS 70
+#define APP_COOLER_DOUBLE_GAP_MS 80
+#define APP_COOLER_DOUBLE_GROUP_GAP_MS 1000
+#define APP_COOLER_POWER_HOLD_MS 2000
+#define APP_COOLER_BOOT_SETTLE_MS 1500
+#define APP_COOLER_ACTION_SETTLE_MS 800
+#define APP_COOLER_TARGET_STEP_C 1
+#define APP_COOLER_TARGET_MIN_C 20
+#define APP_COOLER_TARGET_MAX_C 70
+#define APP_COOLER_HYSTERESIS_C 2.0f
+#define APP_COOLER_UP_CONFIRM_MS 10000
+#define APP_COOLER_DOWN_CONFIRM_MS 30000
+#define APP_COOLER_MIN_HOLD_MS 60000
+
+/* Full two-way KVM: both host clients are now available. */
+#define APP_MAC_TO_WINDOWS_TEST_MODE 0
+
+#define APP_INPUT_DP 7
+#define APP_INPUT_HDMI1 5
+#define APP_INPUT_HDMI2 6
+
+/*
+ * Safety gate: the implementation contract forbids inventing these values.
+ * Keep physical KVM switching off until both values are measured and recorded.
+ */
+#define APP_KVM_TIMING_CONFIRMED 1
+#define APP_DDC_TO_USB_DELAY_MS 0
+#define APP_COOLDOWN_START_UNCONFIRMED 0
+#define APP_COOLDOWN_START_DDC_SUCCESS 1
+#define APP_COOLDOWN_START_USB_PULSE 2
+#define APP_COOLDOWN_START_FLOW_COMPLETE 3
+#define APP_KVM_COOLDOWN_START_POLICY APP_COOLDOWN_START_FLOW_COMPLETE
+
+_Static_assert(APP_USB_RELAY_PULSE_MS >= 200 && APP_USB_RELAY_PULSE_MS <= 300,
+               "USB relay pulse must remain in the measured adjustment range");
+_Static_assert(APP_DDC_TO_USB_DELAY_MS >= 0,
+               "DDC-to-USB delay cannot be negative");
+_Static_assert(APP_KVM_TIMING_CONFIRMED == 0 ||
+               (APP_KVM_COOLDOWN_START_POLICY >= APP_COOLDOWN_START_DDC_SUCCESS &&
+                APP_KVM_COOLDOWN_START_POLICY <= APP_COOLDOWN_START_FLOW_COMPLETE),
+               "A confirmed KVM build requires a measured cooldown start policy");

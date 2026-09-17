@@ -1,0 +1,49 @@
+# macOS and editor metadata
+.DS_Store
+.vscode/
+
+# Local Python environment and caches
+.cadenv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build output and generated dependency trees
+.pio/
+**/build/
+**/.build/
+**/DerivedData/
+**/xcuserdata/
+**/managed_components/
+**/sdkconfig
+**/sdkconfig.old
+**/compile_commands.json
+**/*.elf
+**/*.bin
+**/*.map
+**/*.o
+**/*.a
+**/*.d
+**/*.ninja
+**/*.ninja_deps
+**/*.ninja_log
+**/.objects/
+m1ddc/m1ddc
+
+# Nested upstream repositories are kept as source snapshots, not Git submodules
+**/.git/
+
+# Temporary reference material and local archives
+tmp/
+*.rar
+*.zip
+
+# Local-only configuration and credentials
+config.local.*
+secrets.*
+*.local.h
+
+# Public release archives are intentionally tracked
+!releases/
+!releases/macos/
+!releases/macos/*.zip

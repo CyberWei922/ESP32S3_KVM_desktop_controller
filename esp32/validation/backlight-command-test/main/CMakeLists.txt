@@ -1,0 +1,26 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "app_state.c"
+        "buttons.c"
+        "lcd_driver.c"
+        "lcd_test_ui.c"
+        "network_manager.c"
+        "protocol.c"
+        "websocket_server.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        esp_common
+        esp_system
+        heap
+        esp_driver_gpio
+        esp_driver_spi
+        spi_flash
+        esp_event
+        esp_http_server
+        esp_netif
+        esp_timer
+        esp_wifi
+        nvs_flash
+)

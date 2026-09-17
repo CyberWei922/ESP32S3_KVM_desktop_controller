@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="704" height="536" viewBox="0 0 704 536" shape-rendering="crispEdges">
+<defs>
+<pattern id="d" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#c7c7c2"/><path d="M0 0h2v2H0zm2 2h2v2H2z" fill="#b5b5b0"/></pattern>
+<pattern id="s" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#eee"/><path d="M0 1h4M0 3h4" stroke="#999"/></pattern>
+<pattern id="x" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#fff"/><rect width="1" height="1" fill="#111"/></pattern>
+<filter id="h"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#111"/></filter>
+<style>text{fill:#111;font-family:"Courier New",monospace;font-weight:700;letter-spacing:.15px}.screen{fill:url(#d);stroke:#111;stroke-width:2}.menu,.panel{fill:#fff;stroke:#111}.panel{stroke-width:2;filter:url(#h)}.bar{fill:url(#s);stroke:#111}.cut{fill:#eee}.t7{font-size:7px}.t8{font-size:8px}.t9{font-size:9px}.t12{font-size:12px}.t18{font-size:18px}.t22{font-size:22px}.n{font-weight:400}.r{text-anchor:end}.c{text-anchor:middle}.w{fill:#fff}.blk{fill:#111}.ln{stroke:#111;fill:none}.g{fill:#777}.inv{fill:#111;stroke:#111}.box{fill:#fff;stroke:#111}.off{fill:url(#x);stroke:#111}</style>
+</defs>
+<rect width="704" height="536" fill="#e5e5e1"/><text x="32" y="27" class="t12">KVM DESK / CLASSIC SINGLE-SCREEN PREVIEW</text><text x="32" y="44" class="t8 n">320 × 240 logical pixels · 2× preview · middle key rotates only LIVE DATA</text>
+<g transform="translate(32 56) scale(2)">
+<rect class="screen" width="320" height="240"/><rect class="menu" x="1" y="1" width="318" height="18"/>
+<!-- custom pixel computer and connection icons -->
+<g transform="translate(5 4)" class="ln"><rect width="12" height="9"/><rect x="2" y="2" width="8" height="5"/><path d="M4 10h4m-6 2h8"/></g><text x="22" y="13" class="t9">KVM DESK</text>
+<g transform="translate(184 5)" class="ln"><path d="M0 6h12M2 6V2h8v4M6 2V0"/><rect y="7" width="3" height="3"/><rect x="9" y="7" width="3" height="3"/></g><text x="199" y="13" class="t7">LAN</text><rect x="217" y="6" width="5" height="5" class="blk"/>
+<g transform="translate(228 4)" class="ln"><rect width="10" height="9"/><rect x="2" y="2" width="6" height="4"/><path d="M3 11h4"/></g><text x="241" y="13" class="t7">MAC</text><rect x="259" y="6" width="5" height="5" class="blk"/>
+<g transform="translate(269 4)" class="ln"><rect width="11" height="8"/><path d="M5 8v3M2 11h7"/></g><text x="283" y="13" class="t7">WIN</text><rect x="306" y="6" width="5" height="5" class="blk"/>
+<!-- fixed KVM status -->
+<g transform="translate(8 28)"><rect class="panel" width="304" height="80"/><rect class="bar" x="1" y="1" width="302" height="16"/><rect class="cut" x="111" y="2" width="82" height="14"/><text x="152" y="12" class="t9 c">KVM STATUS</text>
+<text x="11" y="32" class="t8 n">ACTIVE COMPUTER</text><rect x="105" y="22" width="83" height="16" class="inv"/><text x="146" y="33" class="t9 c" style="fill:#fff">MAC MINI</text><text x="202" y="32" class="t8 n">HDMI 2 · VCP 6</text><line x1="10" y1="40" x2="294" y2="40" class="ln"/>
+<text x="11" y="55" class="t8 n">USB OWNER</text><text x="101" y="55" class="t9">MAC</text><text x="158" y="55" class="t8 n">NEXT</text><text x="202" y="55" class="t9">WINDOWS · DP 7</text><text x="11" y="70" class="t8 n">SWITCH</text><text x="62" y="70" class="t9">READY</text><text x="158" y="70" class="t8 n">LAST ERROR</text><text x="293" y="70" class="t9 r">NONE</text></g>
+<!-- only this window rotates -->
+<g transform="translate(8 117)"><rect class="panel" width="198" height="91"/><rect class="bar" x="1" y="1" width="196" height="16"/><rect class="cut" x="58" y="2" width="82" height="14"/><text x="99" y="12" class="t9 c">LIVE DATA</text>
+<text x="11" y="31" class="t7 n">CPU TEMPERATURE</text><text x="11" y="53" class="t22">42.5°C</text><text x="119" y="31" class="t7 n">MEMORY</text><text x="119" y="51" class="t18">63%</text><rect x="119" y="58" width="65" height="8" class="box"/><rect x="121" y="60" width="39" height="4" class="blk"/><line x1="10" y1="71" x2="188" y2="71" class="ln"/><text x="11" y="83" class="t7 n">MAC · UPDATED 0.4s AGO</text><text x="188" y="83" class="t7 r">1 / 3</text></g>
+<!-- fixed cooling placeholder -->
+<g transform="translate(215 117)"><rect class="panel" width="97" height="91"/><rect class="bar" x="1" y="1" width="95" height="16"/><rect class="cut" x="21" y="2" width="55" height="14"/><text x="48" y="12" class="t8 c">COOLING</text><text x="8" y="31" class="t7 n">MODE</text><text x="89" y="31" class="t8 r">STANDARD</text><text x="8" y="44" class="t7 n">TARGET</text><text x="89" y="44" class="t8 r">30°C</text><rect x="8" y="53" width="81" height="17" class="off"/><text x="48" y="64" class="t7 c">UI ONLY</text><text x="48" y="82" class="t7 c g">CONTROL OFF</text></g>
+<!-- status strip, not button legend -->
+<rect x="8" y="219" width="304" height="13" class="menu"/><text x="13" y="228" class="t7 n">FW 0.5.0-dev.22</text><text x="160" y="228" class="t7 c">DATA: CPU + MEMORY</text><text x="307" y="228" class="t7 r">UP 03:42:18</text>
+</g></svg>

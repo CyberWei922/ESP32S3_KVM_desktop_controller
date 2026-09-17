@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "app_state.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        esp_common
+        esp_system
+        heap
+        spi_flash
+)

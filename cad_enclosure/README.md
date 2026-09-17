@@ -4,11 +4,9 @@
 
 ## 实物效果
 
-当前原型的成品照片：
+当前原型的成品照片和控制板实拍见项目主页的[成品展示](../README.md#成品展示)。
 
-![Apple Retro Hybrid KVM Desktop Controller](../docs/images/assembled-product.jpg)
-
-硬件控制板的固定方式和主板走线见[硬件装配与走线实拍](../docs/hardware-assembly.md)。
+硬件控制板的固定方式和主板走线说明见[硬件装配与走线实拍](../docs/hardware-assembly.md)。
 
 ```text
 cad_enclosure/

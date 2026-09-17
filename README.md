@@ -1,9 +1,5 @@
 # ESP32-S3 KVM Desktop Controller
 
-<p align="center">
-  <img src="docs/images/assembled-product.jpg" alt="ESP32-S3 KVM Desktop Controller 成品" width="720">
-</p>
-
 <p align="center">一个把 Mac、Windows、显示器、USB 共享器和桌面设备连接起来的复古风格桌面 KVM 控制器。</p>
 
 ## 项目简介
@@ -30,9 +26,18 @@
 
 当前原型已经完成外壳、状态屏、ESP32-S3 控制板和实体按键的组装：
 
-![ESP32-S3 KVM Desktop Controller 成品](docs/images/assembled-product.jpg)
+<p align="center">
+  <img src="docs/images/assembled-product.jpg" alt="ESP32-S3 KVM Desktop Controller 成品" width="560">
+</p>
 
-硬件固定方式和实际走线请参阅：[硬件装配与走线实拍](docs/hardware-assembly.md)。
+当前控制板固定方式和主板走线如下：
+
+<p align="center">
+  <img src="docs/images/esp32-board-mounted.jpg" alt="ESP32-S3 控制板固定方式" width="43%">
+  <img src="docs/images/esp32-board-wiring.jpg" alt="ESP32-S3 主板背面走线" width="43%">
+</p>
+
+详细说明请参阅：[硬件装配与走线实拍](docs/hardware-assembly.md)。
 
 ## 硬件组成
 
